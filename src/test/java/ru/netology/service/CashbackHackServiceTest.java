@@ -9,7 +9,7 @@ public class CashbackHackServiceTest {
 
     @Test
     public void shouldReturn100IfAmount900() {
-        assertEquals(100, service.remain(900));
+        assertEquals(service.remain(900), 100);
     }
 
     @Test
@@ -29,7 +29,6 @@ public class CashbackHackServiceTest {
 
     @Test
     public void shouldReturn1500IfAmount500() {
-
         assertEquals(service.remain(1500), 500);
     }
 }
